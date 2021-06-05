@@ -1,0 +1,28 @@
+{
+  "name": "blog-dapp-ethereum",
+  "version": "1.0.0",
+  "description": "A blog dApp on Ethereum blockchain using truffle, solidity and react",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "truffle": "^5.0.39",
+    "truffle-assertions": "^0.9.1",
+    "truffle-security": "^1.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YessineAmor/blog-dapp-ethereum.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YessineAmor/blog-dapp-ethereum/issues"
+  },
+  "homepage": "https://github.com/YessineAmor/blog-dapp-ethereum#readme"
+}
