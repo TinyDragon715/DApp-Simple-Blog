@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import blogUtils from '../utils/blogUtils';
+import blogUtils from '../../utils/blogUtils';
 
 class PublishForm extends Component {
     constructor(props) {

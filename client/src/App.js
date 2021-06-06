@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import routes from './modules/routes.js';
 
-import "./App.css";
-import Submissions from "./components/Submissions.js";
-import PublishForm from "./components/PublishForm.js";
-import Navbar from "./components/Navbar";
 import blogUtils from "./utils/blogUtils";
-import MyRewards from "./components/MyRewards";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./assets/css/shards_1.1.0.min.css";
+import "./assets/css/style.css";
 
 class App extends Component {
 
@@ -47,38 +48,30 @@ class App extends Component {
         }
     }
 
-    render() {
-
-        const header = <div> <h1>Greatest Blog Ever</h1>
-            <h5>it's not the greatest looking blog but the more important question
-        to ask does it have the best content? ... well no but it's something!</h5>
-            <h6>Runs on Ropsten network.</h6>
-            <Navbar buttonClicked={this.buttonClicked} /></div>
-
-        if (this.state.tab === "Home") {
+  render() {
+    return (
+      <Router>
+        <div>
+          {routes.map((route, index) => {
             return (
-                <div className="App">
-                    {header}
-                    <Submissions />
-                </div>
+              <Route
+                key={index}
+                path={route.path}
+                exact={route.exact}
+                component={() => {
+                  return (
+                    <route.layout>
+                      <route.component/>
+                    </route.layout>
+                  );}
+                }
+              />
             );
-        } else if (this.state.tab === "Write") {
-            return (
-                <div className="App">
-                    {header}
-                    <PublishForm changeTab={this.changeTab} />
-                </div>
-            );
-        }
-        else if (this.state.tab === "Rewards") {
-            return (
-                <div className="App">
-                    {header}
-                    <MyRewards />
-                </div>
-            );
-        }
-    }
+          })}
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;

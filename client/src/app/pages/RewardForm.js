@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import blogUtils from '../utils/blogUtils';
+import blogUtils from '../../utils/blogUtils';
 
 class RewardForm extends Component {
     constructor(props) {

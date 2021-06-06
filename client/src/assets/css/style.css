@@ -1,0 +1,48 @@
+.ps-coverImage {
+  height: 125px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ps-content {
+  padding: 0 15px 15px;
+}
+.ps-avatar {
+  border-radius: 50%;
+  box-shadow: 1px 1px 8px 0px #d6a410;
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  padding: 5px;
+  margin-top: -20px;
+}
+.ps-info {
+  margin-left: 20px;
+}
+.blog-item {
+  border-left: 3px solid white;
+  border-bottom: 1px solid #e1e5eb;
+}
+.blog-item:hover, .blog-item:active {
+  border-left: 3px solid #0088ff;
+  cursor: pointer;
+}
+.blog-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.blog-content {
+  width: 100%;
+}
+.blog-bottom i {
+  font-size: 20px;
+  margin-right: 20px;
+}
+.blog-bottom i:hover {
+  color: #0088ff;
+}
+.blog-bottom .icon-redeem {
+  font-size: 18px;
+}
