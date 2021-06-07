@@ -14,23 +14,25 @@ const Layout = ({ children, noNavbar, noFooter }) => (
         sm="12"
         tag="main"
       >
-      <TopNavbar />
-        <Row className="mx-0 my-4">
-          <Col
-            lg="3"
-            md="4"
-            sm="4"
-          >
-            <LeftSidebar />
-          </Col>
-          <Col
-            lg="9"
-            md="8"
-            sm="8"
-          >
-            {children}
-          </Col>
-        </Row>
+        <TopNavbar />
+        <Container className="p-0">
+          <Row className="mx-0 my-4">
+            <Col
+              lg="3"
+              md="4"
+              sm="4"
+            >
+              <LeftSidebar />
+            </Col>
+            <Col
+              lg="9"
+              md="8"
+              sm="8"
+            >
+                {children}
+            </Col>
+          </Row>
+        </Container>
       </Col>
     </Row>
   </Container>

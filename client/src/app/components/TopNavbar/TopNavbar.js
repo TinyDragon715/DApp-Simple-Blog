@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { 
   Container, 
   Navbar, 
@@ -15,7 +15,7 @@ import NewPeepModal from "../../components/NewPeepModal.js";
 import brandImage from "../../../assets/images/oilfield-logo.png";
 
 const TopNavbar = () => {
-  const [collapseOpen, setCollapseOpen] = useState(true);
+  // const [collapseOpen, setCollapseOpen] = useState(true);
   const [openModal, SetOpenModal] = useState(false);
 
   const newPeep = () => {

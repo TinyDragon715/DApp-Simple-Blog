@@ -1,6 +1,7 @@
 import getWeb3 from "./getWeb3"
 import LocalBlogContract from "../contracts/Blog.json";
 import RopstenBlogContract from "../contracts/RopstenBlog.json";
+import { array } from "shards-react";
 
 const blogUtils = class {
 
@@ -47,7 +48,12 @@ const blogUtils = class {
                 ); */
             }
 
-            return [this.web3, this.accounts, this.networkId, this.instance]
+            return {
+                'web3' : this.web3,
+                'accounts' : this.accounts,
+                'networkId' : this.networkId,
+                'instance' : this.instance
+            };
         } catch (error) {
             console.log(error)
         }

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { 
   Modal,
   ModalBody,
-  ModalHeader,
   FormInput,
   FormTextarea,
   FormSelect,
@@ -11,7 +10,9 @@ import {
   Button
 } from "shards-react";
 
-const NewPeepModal = (props) => {
+const ShowPeepModal = (props) => {
+  const blogData = props.blogData;
+
   return (
     <Modal open={props.open} toggle={props.toggle}>
       <ModalBody>
@@ -20,7 +21,7 @@ const NewPeepModal = (props) => {
         <p>
           Please enter the details around your safety incident. A detailed description will make it easier for others to tend and prevent.
         </p>
-        <FormInput placeholder="Interesting title" />
+        <FormInput placeholder="Interesting title" value={blogData[1]}/>
         <FormTextarea size="lg" placeholder="Description" className="mt-2" />
         <FormTextarea size="lg" placeholder="Recommendations" className="mt-2" />
         <label className="mt-3">
@@ -68,4 +69,4 @@ const NewPeepModal = (props) => {
   );
 }
 
-export default NewPeepModal;
+export default ShowPeepModal;
