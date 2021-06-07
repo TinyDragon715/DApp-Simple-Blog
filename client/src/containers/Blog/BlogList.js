@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect } from 'react'
 import _ from "lodash";
-import RewardForm from "../RewardForm";
+import RewardForm from "../Other/RewardForm";
 import { Button } from "shards-react";
 import blogUtils from '../../utils/blogUtils';
 import ShowPeepModal from "./components/ShowPeepModal";

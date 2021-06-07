@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../containers/layout";
+import Layout from "../containers/Layout/Layout";
 import BlogList from "../containers/Blog/BlogList";
 
 export default [

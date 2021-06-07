@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import routes from './modules/routes';
+import routes from '../modules/routes';
 
-import blogUtils from "./utils/blogUtils";
+import blogUtils from "../utils/blogUtils";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./assets/css/shards_1.1.0.min.css";
-import "./assets/css/style.css";
+import "../assets/css/shards_1.1.0.min.css";
+import "./App.scss"
 
 class App extends Component {
 
