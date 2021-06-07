@@ -17,7 +17,7 @@ const BlogList = () => {
   });
 
   const [displayModal, setDisplayModal] = useState(false);
-  const [displayTip, setDisplayTip] = useState(false);
+  const [displayTipIndex, setDisplayTipIndex] = useState(-1);
   const [selectedBlogData, setSelectedBlogData] = useState([]);
 
   useEffect(() => {
@@ -101,9 +101,17 @@ const BlogList = () => {
     e.stopPropagation();
   }
 
-  const redeemHandler = (e, blog) => {
+  const redeemHandler = (e, blog, index) => {
     e.stopPropagation();
-    setDisplayTip(true);
+    setDisplayTipIndex(index);
+  }
+
+  const preventHandler = (e) => {
+    e.stopPropagation();
+  }
+
+  const tipCloseHandler = () => {
+    setDisplayTipIndex(-1);
   }
 
   if (!blogStates.accounts) {
@@ -139,21 +147,27 @@ const BlogList = () => {
                   </pre>{" "} */}
                   <p> {blog[2]} </p>{" "}
                   {/* <RewardForm submissionIndex={index} fetchSubmissions={this.fetchSubmissions} /> */}
-                  <div className="blog-bottom">
-                    <i 
-                      className="material-icons"
-                      onClick={(e) => replyHandler(e, blog)}
-                    >
-                      reply
-                    </i>
-                    <i 
-                      className="material-icons icon-redeem"
-                      onClick={(e) => redeemHandler(e, blog)}
-                    >
-                      redeem
-                    </i>
-                  </div>
-                  {displayTip && <SendTipPanel />}
+                  {index === displayTipIndex ? (
+                    <SendTipPanel 
+                      preventClick = {(e) => preventHandler(e)} 
+                      closeClick = {() => tipCloseHandler()}
+                    />
+                  ) : (
+                    <div className="blog-bottom">
+                      <i 
+                        className="material-icons"
+                        onClick={(e) => replyHandler(e, blog)}
+                      >
+                        reply
+                      </i>
+                      <i 
+                        className="material-icons icon-redeem"
+                        onClick={(e) => redeemHandler(e, blog, index)}
+                      >
+                        redeem
+                      </i>
+                    </div>
+                  )}
                 </div>
               </div>
             )

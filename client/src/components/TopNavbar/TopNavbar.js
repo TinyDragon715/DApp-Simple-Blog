@@ -35,12 +35,12 @@ const TopNavbar = () => {
           </NavbarBrand>
           <Nav className="flex-row navbar-nav">
             <NavItem>
-              <NavLink active href="#" className="d-flex align-items-center h-100">
+              <NavLink active href="/" className="d-flex align-items-center h-100">
                 New
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#" className="d-flex align-items-center h-100">
+              <NavLink href="/friends" className="d-flex align-items-center h-100">
                 Friends
               </NavLink>
             </NavItem>

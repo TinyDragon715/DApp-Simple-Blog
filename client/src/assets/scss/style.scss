@@ -37,21 +37,39 @@
       border-radius: 50%;
     }
   } 
-}
-.blog-content {
-  width: 100%;
-
-  .blog-bottom {
-    i {
-      font-size: 20px;
-      margin-right: 20px;
-
-      &:hover {
-        color: $blue;
+  .blog-content {
+    width: 100%;
+  
+    .blog-bottom {
+      i {
+        font-size: 20px;
+        margin-right: 20px;
+  
+        &:hover {
+          color: $blue;
+        }
+      }
+      .icon-redeem {
+        font-size: 18px;
       }
     }
-    .icon-redeem {
-      font-size: 18px;
+    .tipPanel {
+      cursor: default;
+      background-color: $gray-light;
+      padding: 20px 30px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      
+      .icon-close {
+        position: absolute;
+        right: -5px;
+        top: -8px;
+        cursor: pointer;
+        
+        i {
+          font-size: 20px;
+        }
+      }
     }
   }
 }
