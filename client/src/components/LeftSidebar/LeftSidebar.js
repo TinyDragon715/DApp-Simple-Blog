@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import defaultCoverImage from "../../../assets/images/oilfield.jpg";
-import logo from "../../../assets/images/oilfield-logo.png";
+import defaultCoverImage from "../../assets/images/oilfield.jpg";
+import logo from "../../assets/images/oilfield-logo.png";
 
 const LeftSidebar = () => {
   return (

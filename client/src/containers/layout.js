@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "shards-react";
-import TopNavbar from "./components/TopNavbar/TopNavbar.js";
-import LeftSidebar from "./components/LeftSidebar/LeftSidebar.js";
+import TopNavbar from "../components/TopNavbar/TopNavbar";
+import LeftSidebar from "../components/LeftSidebar/LeftSidebar";
 
 
 const Layout = ({ children, noNavbar, noFooter }) => (

@@ -1,10 +1,10 @@
 import React, { Component, useState, useEffect } from 'react'
 import _ from "lodash";
-import RewardForm from './RewardForm'
+import RewardForm from "../RewardForm";
 import { Button } from "shards-react";
 import blogUtils from '../../utils/blogUtils';
-import ShowPeepModal from "../components/ShowPeepModal.js";
-import SendTipPanel from "../components/SendTipPanel.js";
+import ShowPeepModal from "./components/ShowPeepModal";
+import SendTipPanel from "./components/SendTipPanel";
 import defaultImage from "../../assets/images/oilfield-logo.png";
 
 const BlogList = () => {

@@ -8,11 +8,11 @@ import {
   NavLink,
   Button
 } from "shards-react";
-import NavbarNotifications from "./NavbarNotifications.js";
-import NavbarSearch from "./NavbarSearch.js";
-import UserActions from "./UserActions.js";
-import NewPeepModal from "../../components/NewPeepModal.js";
-import brandImage from "../../../assets/images/oilfield-logo.png";
+import NavbarNotifications from "./NavbarNotifications";
+import NavbarSearch from "./NavbarSearch";
+import UserActions from "./UserActions";
+import NewPeepModal from "../../containers/Blog/components/NewPeepModal";
+import brandImage from "../../assets/images/oilfield-logo.png";
 
 const TopNavbar = () => {
   // const [collapseOpen, setCollapseOpen] = useState(true);
