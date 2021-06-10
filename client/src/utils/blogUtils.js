@@ -39,7 +39,7 @@ const blogUtils = class {
                 this.networkId = await this.web3.eth.net.getId();
                 this.instance = new this.web3.eth.Contract(
                     RopstenBlogContract.abi,
-                    '0x6b5a532D719a99312eb01370808b605F52bE4C05'
+                    '0x55DAeE5db3BCB9b74ddf0fF483322519fcf376b9'
                 );
                 /* For local dev
                     this.instance = new this.web3.eth.Contract(
