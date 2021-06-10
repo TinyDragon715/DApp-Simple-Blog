@@ -1,12 +1,23 @@
-# blog-dapp-ethereum
-[![CircleCI](https://circleci.com/gh/YessineAmor/blog-dapp-ethereum/tree/master.svg?style=shield)](https://circleci.com/gh/YessineAmor/blog-dapp-ethereum/tree/master)
+# DApp Simple Blog 
 
-A blog dApp on Ethereum blockchain using truffle, solidity and react.
+A Simple Blog DApp on Ethereum blockchain using Truffle, Solidity and React.js.
 
-Deployed here: https://blog-dapp.herokuapp.com/  
+### Prerequisites
 
-## User capabilites
-* Users can publish articles - DONE
-* Users can comment on articles - TO DO
-* Users can like/dislike articles/comments - TO DO
-* Users can donate to comment/article writer - DONE
+You need to have installed Node.js, Truffle and set Ropsten network on meta mask.
+
+### Installing
+* cd client
+* npm install
+
+### To Run
+* truffle develop
+* > compile
+* > migrate
+* cd client
+* npm start
+
+Code is Running on 
++ http://localhost:3000/
+
+:heart_eyes: Thanks
